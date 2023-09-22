@@ -1,0 +1,68 @@
+@mixin arrow($color, $width, $height, $borderWidth: 2px, $after: true) {
+  position: relative;
+  @if $after {
+    &:after {
+      @include bp(mobile tablet) {
+        width: calc($width * 2);
+        height: calc($height * 2);
+        margin-top: 12px;
+        margin-left: 16px;
+
+        border-width: calc($borderWidth * 2);
+      }
+      @include bp(desktop-large) {
+        margin-top: 8px;
+        margin-left: 10px;
+      }
+      @include bp(desktop-wide) {
+        margin-top: 7px;
+      }
+
+      display: inline-block;
+
+      width: $width;
+      height: $height;
+      margin-top: 8px;
+      margin-left: 8px;
+
+      content: "";
+      transform: rotate(-45deg);
+      vertical-align: top;
+
+      border-right: $borderWidth solid $color;
+      border-bottom: $borderWidth solid $color;
+    }
+  } @else {
+    &:before {
+      @include bp(mobile tablet) {
+        width: calc($width * 2);
+        height: calc($height * 2);
+        margin-top: 12px;
+        margin-right: 16px;
+
+        border-width: calc($borderWidth * 2);
+      }
+      @include bp(desktop-large) {
+        margin-top: 8px;
+        margin-right: 8px;
+      }
+      @include bp(desktop-wide) {
+        margin-top: 7px;
+      }
+
+      display: inline-block;
+
+      width: $width;
+      height: $height;
+      margin-top: 8px;
+      margin-right: 8px;
+
+      content: "";
+      transform: rotate(-45deg);
+      vertical-align: top;
+
+      border-right: $borderWidth solid $color;
+      border-bottom: $borderWidth solid $color;
+    }
+  }
+}

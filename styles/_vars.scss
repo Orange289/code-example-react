@@ -1,0 +1,188 @@
+// Global values
+// --------------------------------------------------
+$images-dir: "i/dest/"; // Used by background-retina mixin
+//
+// Paddings
+// -------------------------
+$padding-base: 40px;
+
+$padding-base-tablet: 95px;
+
+$padding-base-desktop: 120px;
+
+$padding-base-desktop-wide: $padding-base;
+
+//
+// Responsitive layout
+// -------------------------
+$width--tablet: 960px;
+
+$container__width--desktop: $width--tablet + (2 * $padding-base-tablet) + 1px; // 1150px
+
+$container__width--prewide: 1200px + (2 * $padding-base-desktop); //1440px
+
+$width--desktop: 1600px;
+
+$container__width--desktop-wide: $width--desktop + (2 * $padding-base);
+// $mobile-container-portrait: 320px;
+// desktop up to 480
+// tablet up to 960
+// desktop up to 1700
+// 'desktop': 1190px,
+// new names for best understanding meaning
+
+$popup__width: 800px;
+
+$navigation-padding-base: 4%;
+// Typography
+$font-family-main: "FoxSansPro", sans-serif;
+$font-family-second: var(--font-inter), sans-serif;
+
+$font-size-base: 18px;
+
+$font-size-base-wide: 22px;
+// mobile-xs
+// --------------------------------------------------
+$font-size-base-mobile-xs: 16px;
+
+$line-height-base-mobile-xs: 18px;
+// --------------------------------------------------
+// mobile
+// --------------------------------------------------
+$font-size-base-mobile: 26px;
+
+$line-height-base-mobile: 32px;
+// --------------------------------------------------
+// tablet
+// --------------------------------------------------
+$font-size-base-tablet: 20px;
+
+$line-height-base-tablet: 20px;
+// --------------------------------------------------
+// desktop
+// --------------------------------------------------
+// $font-size-base: 22px;
+
+$line-height-base: 22px;
+// --------------------------------------------------
+// $font-family-base: Gill Sans, sans-serif, Arial, Helvetica Neue, Helvetica;
+
+// $font-family-second: Fedra Sans Pro, sans-serif, Arial, Helvetica Neue,
+//   Helvetica;
+// $font-family-third: Fedra Sans Pro Book, sans-serif, Arial, Helvetica Neue,
+//   Helvetica;
+// Colors
+// --------------------------------------------------
+$transparent: rgba(255, 255, 255, 0);
+
+$color__white: #fff;
+
+$color__black: #000;
+
+$color__black--light: #222224;
+
+$color__black--lighter: #252c2e;
+
+$color__black-2: #2f383a;
+
+$color__green: #007f39;
+
+$color__green--light: #409f6b;
+
+$color__green--lighter: #46a26f;
+
+$color__green-2: #02b24a;
+
+$color__green--lightest: #02cc52;
+
+$color__green-2-dark: #00662e;
+
+$color__gray: #818c99;
+
+$color__gray--light: #f2f2f2;
+
+$color__gray--lighter: #f8f8f8;
+
+$color__gray--lightest: #f2f2f2;
+
+$color__gray-2: #9a9d99;
+
+$color__gray-2-light: #ebebeb;
+
+$color__gray-2-lightest: #fafafa;
+
+$color__darkblue: #043348;
+
+$color__darkblue-light: #163d4c;
+
+$color__darkblue-lighter: #0d455e;
+
+$color__lightblue: #e8f3f7;
+
+$color__text: $color__black;
+
+$color__stocks: #76faaf;
+
+$color__currencies: #42c9f4;
+
+$color__metal: #1c68ff;
+
+$color__futures: #e649f4;
+
+$color__options: #f1486e;
+
+$color__funds: #f1e147;
+
+$color__bonds: #b1f845;
+
+$color__cryptocurrencies: #f39520;
+
+$color-red: #c2454d;
+
+$color-velexa-blue: #0056ff;
+
+$color-velexa-blue-darker: #193ac5;
+
+$color-velexa-darkblue: #001d4c;
+
+$color__dark: #242b2d;
+// components && objects
+// --------------------------------------------------
+$error-color: $color__white;
+
+$width__right: 56.875%;
+
+// Grid
+$max-container-width: 1536px;
+
+$cols: 4;
+$cols-sm: 16;
+$cols-md: 24;
+$cols-lg: 24;
+$cols-xl: 24;
+
+$xgrid__gutter: 16px;
+$xgrid__gutter-sm: 16px;
+$xgrid__gutter-md: 16px;
+$xgrid__gutter-lg: 16px;
+$xgrid__gutter-xl: 16px;
+
+$header-fixed-height: 88px;
+$header-fixed-height-sm: 104px;
+$header-fixed-height-md: 144px;
+
+// Container
+$container-padding: 20px;
+$container-width-tablet: 944px;
+$container-width-desktop: 1185px;
+$container-width-wide-desktop: 1456px;
+
+// Reading room page variables
+$content-height-tablet: 1350px;
+$content-height-desktop: 1150px;
+$content-height-wide: 1150px;
+$points-padding-left-desktop: 56px;
+$highlights-triangle-width: 30px;
+$highlights-width-desktop: 360px;
+$highlights-width-wide: 392px;
+$points-padding-left-wide: 72px;

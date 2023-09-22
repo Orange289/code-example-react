@@ -1,0 +1,146 @@
+.team {
+  background: $color__gray--lighter;
+  padding: 80px 0;
+
+  h2 {
+    font-size: 48px;
+    margin: 0;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.team__items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+// .team__item .team__links {
+//   position: absolute;
+//   display: none;
+//   padding: 0 32px 40px;
+//   top: 100%;
+//   width: 100%;
+//   background-color: #ffffff;
+//   z-index: 2;
+
+//   img {
+//     position: absolute;
+//     bottom: 16px;
+//     right: 16px;
+//     width: 48px;
+//     height: 48px;
+//     margin-bottom: 0;
+//   }
+
+//   .team__link {
+//     color: $color__green;
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 16px;
+//   }
+
+//   li + li {
+//     margin-top: 10px;
+//   }
+// }
+
+.team__item {
+  width: 25%;
+  margin-bottom: 56px;
+
+  img {
+    width: 192px;
+    height: 192px;
+    display: block;
+    object-fit: cover;
+  }
+
+  strong {
+    color: $color__green;
+    font-weight: 400;
+    font-size: 22px;
+    display: block;
+  }
+
+  p {
+    font-size: 16px;
+    color: #000000;
+  }
+}
+
+.team__person {
+  display: block;
+  max-width: 240px;
+  background-color: transparent;
+  transition: background-color 0.3s;
+  position: relative;
+
+  // &:hover {
+  //   box-shadow: 8px 8px 26px rgba(0, 0, 0, 0.05);
+  //   background-color: #ffffff;
+
+  //   .team__links {
+  //     display: block;
+  //   }
+  // }
+}
+
+.team__itemtop {
+  padding: 24px 32px;
+}
+
+.team__img {
+  width: 192px;
+  margin-bottom: 24px;
+  span {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    height: 32px;
+    padding-top: 6px;
+    background-color: $color__green;
+    text-align: center;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+}
+
+.team__position {
+  color: $color__gray;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.12em;
+  opacity: 0.4;
+}
+
+.team__note {
+  strong {
+    color: #000000;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &.education {
+    padding-left: 31px;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 21px;
+      height: 16px;
+      background: url("/images/icons/education.svg");
+    }
+  }
+}

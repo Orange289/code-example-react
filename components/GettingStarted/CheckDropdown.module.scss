@@ -1,0 +1,119 @@
+.dropdown {
+  color: $color__black--lighter;
+  position: relative;
+}
+
+.dropdown__top {
+  cursor: pointer;
+  padding: 17px 16px 17px 24px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  position: relative;
+
+  strong {
+    font-size: 22px;
+    margin-right: 8px;
+  }
+
+  span {
+    color: $color__gray-2;
+    opacity: 0.5;
+    letter-spacing: 0.01em;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    width: 18px;
+    height: 18px;
+    border-left: 2px solid $color__green;
+    border-bottom: 2px solid $color__green;
+    transform: rotate(-45deg);
+    transition: transform 0.3s;
+  }
+
+  &.open {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  &.open:after {
+    top: 24px;
+    transform: rotate(135deg);
+  }
+}
+
+.dropdown__list {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.08);
+
+  height: 496px;
+  overflow: scroll;
+
+  ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 10px 24px 16px;
+    position: static;
+  }
+}
+
+.dropdown__item {
+  margin-bottom: 32px;
+
+  label {
+    cursor: pointer;
+  }
+
+  strong {
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 32px;
+    height: 32px;
+    border: 2px solid $color__green--light;
+    border-radius: 100%;
+    margin-right: 16px;
+
+    img {
+      display: none;
+    }
+  }
+
+  input {
+    display: none;
+
+    &:checked + span {
+      background-color: $color__green;
+      border-color: $color__green;
+
+      img {
+        display: block;
+        margin-top: 10px;
+        margin-left: 7px;
+      }
+    }
+  }
+}
+
+.dropdown__progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  background-color: $color__green-2;
+}

@@ -1,0 +1,74 @@
+.payroll {
+  background-color: $color__gray-2-lightest;
+  padding: 72px 0 80px;
+
+  h2 {
+    font-size: 48px;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  h3 {
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  a {
+    font-size: 20px;
+    font-weight: 400;
+    @include arrow($color__green, 6px, 6px);
+
+    &:after {
+      margin-left: 4px;
+      margin-top: 10px;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.payroll__important {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 400;
+  margin-bottom: 24px;
+
+  @include bp(desktop-wide) {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+.payroll__policy {
+  margin-bottom: 40px;
+}
+
+.payroll__salary {
+  background: #ffffff;
+  box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  // padding: 56px 48px 64px;
+  padding: 40px 32px;
+}
+
+.payroll__note {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 20px;
+
+  img {
+    margin-right: 16px;
+  }
+}

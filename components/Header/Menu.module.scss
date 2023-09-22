@@ -1,0 +1,135 @@
+.menu {
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: $color__green;
+  padding: 112px 0 0 0;
+  box-shadow: -12px 4px 64px rgba(0, 0, 0, 0.2);
+  z-index: 12;
+
+  width: 488px;
+  height: 100vh;
+  transform: translateX(488px);
+  transition: transform 0.4s;
+
+  &.open {
+    transform: translateX(0);
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.menu__close {
+  position: absolute;
+  top: 30px;
+  right: 114px;
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 2px;
+    height: 36px;
+    background: #ffffff;
+  }
+
+  &:before {
+    left: calc(50% - 2px);
+
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    right: 50%;
+    transform: rotate(-45deg);
+  }
+}
+
+.menu__items {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.menu__itemtop {
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+  font-weight: 400;
+
+  padding: 0 114px 45px 48px;
+  cursor: pointer;
+
+  &.open {
+    padding-bottom: 10px;
+  }
+
+  a {
+    color: #ffffff;
+  }
+}
+
+.menu__arrow {
+  content: "";
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  width: 20px;
+  height: 20px;
+  transform: rotate(-45deg);
+  margin-top: 4px;
+  margin-right: 7px;
+
+  .menu__itemtop.open & {
+    transform: rotate(135deg);
+    margin-top: 16px;
+  }
+}
+
+.menu__itemlist {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.menu__link {
+  font-size: 20px;
+  line-height: 40px;
+
+  a {
+    color: #ffffff;
+    display: block;
+    padding: 5px 114px 5px 65px;
+    box-shadow: 0px 4px 26px rgba(0, 0, 0, 0);
+    transition: all 0.3s;
+
+    &:hover {
+      padding-left: 85px;
+      box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  svg {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50px;
+    height: 40px;
+    margin-right: 40px;
+  }
+
+  &:last-child {
+    margin-bottom: 28px;
+  }
+}

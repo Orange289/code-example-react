@@ -1,0 +1,109 @@
+.departments {
+  padding-top: 96px;
+  background: linear-gradient(to bottom, #F8F8F8 561px, #ffffff 561px);
+  font-size: 0; // for remove white line under image
+
+  &.withTitle {
+    padding-top: 72px;
+  }
+
+  h1 {
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 48px;
+    margin-bottom: 24px;
+  }
+
+  h3 {
+    color: $color__green;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 48px;
+    scroll-margin-top: 140px;
+    cursor: pointer;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 18px;
+      height: 18px;
+      transform: rotate(45deg);
+      transition: transform 0.3s;
+      border-bottom: 2px solid $color__green;
+      border-left: 2px solid $color__green;
+    }
+
+    &.active:after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  h4 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 0;
+  }
+
+  &.department_noimage {
+    padding-bottom: 96px;
+  }
+}
+
+
+.departments__department {
+  flex-grow: 1;
+  flex-basis: 33.33%;
+
+  &:only-child {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+
+.departments__department_level {
+  display: flex;
+  margin: 0 -8px;
+
+  &+&>.departments__department:not(.departments__department_empty) {
+    margin-top: 48px;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: -48px;
+      display: block;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 40px 72px 0 72px;
+      border-color: #ffffff transparent transparent transparent;
+      filter: drop-shadow(4px 40px 26px #0000001A);
+    }
+  }
+
+  &:last-of-type {
+    .departments__department {
+      padding: 0;
+      box-shadow: none;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+.departments__breadcrumbs {
+  padding-bottom: 24px;
+}
+
+.departments__image {
+  max-width: 100%;
+}

@@ -1,0 +1,29 @@
+.greetings {
+  padding-top: 104px;
+  padding-bottom: 64px;
+
+  h2 {
+    font-size: 48px;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+}
+
+.greetings__breadcrumbs {
+  padding-bottom: 16px;
+}
+
+.greetings__today {
+  font-size: 32px;
+  line-height: 48px;
+  margin-bottom: 8px;
+}
+
+.greetings__items {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  margin-left: -32px;
+  margin-right: -32px;
+  padding: 0;
+  list-style: none;
+}

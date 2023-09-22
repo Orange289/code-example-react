@@ -1,0 +1,69 @@
+.velexa {
+  color: #ffffff;
+  // padding: 80px 0 72px;
+  background: $color-velexa-blue;
+
+  h2 {
+    font-size: 48px;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  p {
+    font-size: 22px;
+    line-height: 30px;
+    margin: 0;
+    margin-bottom: 24px;
+    max-width: 490px;
+  }
+
+  a {
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+
+    @include arrow(#ffffff, 6px, 6px);
+
+    &:after {
+      margin-top: 10px;
+      margin-left: 8px;
+    }
+  }
+}
+
+.velexa__container {
+  position: relative;
+}
+
+.velexa__triangle {
+  position: absolute;
+  top: 0;
+  right: -180px;
+}
+
+.velexaItems {
+  padding: 72px 0 112px;
+  color: #ffffff;
+  background: $color-velexa-darkblue;
+}
+
+.velexaItems__row {
+  justify-content: space-between !important;
+}
+
+.velexa__content {
+  align-self: center;
+}
+
+.velexa__image {
+  font-size: 0;
+  padding-top: 60px;
+
+  img {
+    margin-left: -44px;
+
+    @include bp(desktop-wide) {
+      margin-left: -50px;
+    }
+  }
+}

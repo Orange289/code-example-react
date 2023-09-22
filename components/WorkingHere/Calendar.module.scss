@@ -1,0 +1,50 @@
+.calendar {
+  color: #ffffff;
+  background-image: url("/images/holydays-calendar-bg.jpg");
+  background-size: cover;
+  padding: 72px 0 80px;
+
+  h2 {
+    font-size: 48px;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  a {
+    font-size: 18px;
+    font-weight: 400;
+
+    @include arrow($color__green, 6px, 6px);
+
+    &:after {
+      margin-left: 4px;
+      margin-top: 9px;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.calendar__note {
+  padding-left: 32px;
+  border-left: 2px solid $color__green;
+  margin-top: 24px;
+}
+
+p.calendar__important {
+  font-size: 22px;
+  line-height: 28px;
+  margin-bottom: 16px;
+}
+
+.calendar__right {
+  padding-top: 10px;
+}

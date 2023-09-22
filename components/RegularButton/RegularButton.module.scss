@@ -1,0 +1,124 @@
+.regularbutton {
+  font-family: $font-family-second;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-decoration: none;
+  text-align: center;
+  background: linear-gradient(180deg, #029e47 0%, #01803a 100%);
+  border: none;
+  opacity: 1;
+  // transition: background 0.3s;
+
+  &:hover {
+    text-decoration: none;
+    background: linear-gradient(180deg, #01c056 0%, #01803a 100%);
+  }
+
+  // @include bp(mobile) {
+  //   font-size: 44px;
+  //   line-height: 62px;
+
+  //   min-width: 288px;
+  //   padding: 16px;
+  //   height: 96px;
+  // }
+  @include bp(tablet) {
+    min-width: 144px;
+
+    font-size: 15px;
+    line-height: 16px;
+    height: 48px;
+    padding: 8px 30px;
+  }
+}
+
+.regularbutton_secondary {
+  &:before {
+    display: none;
+  }
+  &:after {
+    content: "";
+    background: linear-gradient(#ffffff, #ffffff) top left,
+      linear-gradient(#ffffff, #ffffff) top right,
+      linear-gradient(
+          -65deg,
+          rgba(255, 255, 255, 0) calc(50% - 2px / 2 - 2px / 8),
+          #ffffff calc(50% - 2px / 2),
+          #ffffff calc(50% + 2px / 2),
+          rgba(255, 255, 255, 0) calc(50% + 2px / 2 + 2px / 8)
+        )
+        bottom right,
+      linear-gradient(#ffffff, #ffffff) top left,
+      linear-gradient(#ffffff, #ffffff) bottom left;
+    background-size: 100% 2px, 2px calc(100% - 2px * 10 + 1px),
+      calc(2px * 5 + 1px) calc(2px * 10), 2px 100%, calc(100% - 2px * 5) 2px;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 4px;
+    transform: scale(1);
+    transition: transform 0.3s;
+  }
+  &:hover:after {
+    background: none;
+    border: 2px solid #ffffff;
+    transform: scale(1.02);
+  }
+  &Green:after {
+    background: linear-gradient($color__green--light, $color__green--light) top
+        left,
+      linear-gradient($color__green--light, $color__green--light) top right,
+      linear-gradient(
+          -65deg,
+          rgba(255, 255, 255, 0) calc(50% - 2px / 2 - 2px / 8),
+          $color__green--light calc(50% - 2px / 2),
+          $color__green--light calc(50% + 2px / 2),
+          rgba(255, 255, 255, 0) calc(50% + 2px / 2 + 2px / 8)
+        )
+        bottom right,
+      linear-gradient($color__green--light, $color__green--light) top left,
+      linear-gradient($color__green--light, $color__green--light) bottom left;
+    background-size: 100% 2px, 2px calc(100% - 2px * 10 + 1px),
+      calc(2px * 5 + 1px) calc(2px * 10), 2px 100%, calc(100% - 2px * 5) 2px;
+    background-repeat: no-repeat;
+  }
+  &Green:hover:after {
+    border: 2px solid $color__green--light;
+  }
+}
+
+.regularbutton_white {
+  color: #6d8288;
+
+  background: linear-gradient(180deg, #f9f9f9 0%, #f0f0f0 100%);
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:hover {
+    background: linear-gradient(
+      180deg,
+      #fff 35.42%,
+      #e8e8e8 69.05%,
+      #b1b1b1 100%
+    );
+    // clip-path: none;
+    // transform: scale(1.02);
+  }
+}

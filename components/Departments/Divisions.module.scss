@@ -1,0 +1,11 @@
+.divisions {
+  // display: flex;
+  // margin-left: -52px !important;
+  padding-top: 20px;
+  margin-left: -15px !important;
+  margin-right: -15px !important;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 24px;
+}

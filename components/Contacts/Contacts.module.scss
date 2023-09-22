@@ -1,0 +1,19 @@
+.contacts {
+  background-color: $color__gray--lighter;
+  // padding: 32px 0 96px;
+  padding: 0;
+}
+
+.results_count {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
+  margin: 0 0 32px 0;
+  color: $color__gray;
+}
+
+.search_header {
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: capitalize;
+}

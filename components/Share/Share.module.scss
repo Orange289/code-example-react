@@ -1,0 +1,32 @@
+.share {
+  color: #ffffff;
+  background-image: url("/images/share-bg-new.jpg");
+  background-color: #ffffff;
+  background-size: cover;
+  background-position: center;
+  padding: 96px 0;
+
+  h2,
+  p {
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 18px;
+  }
+
+  p {
+    line-height: 1.5;
+    @include bp(desktop-wide) {
+      font-size: 20px;
+    }
+  }
+}
+
+.share__left {
+  p {
+    font-weight: 300;
+    font-size: 20px;
+    @include bp(desktop-wide) {
+      font-size: 24px;
+    }
+  }
+}

@@ -1,0 +1,166 @@
+.intro {
+  padding: 104px 0 0px;
+  background-color: $color__black--lighter;
+}
+
+.intro__content {
+  display: flex;
+  padding-top: 44px;
+}
+
+.intro__image {
+  width: 176px;
+  height: 176px;
+  position: relative;
+
+  & > img {
+    width: 100%;
+    border-radius: 50%;
+  }
+}
+
+.intro__bdicon {
+  bottom: -10px;
+}
+
+.intro__info {
+  color: #ffffff;
+  margin-left: 64px;
+
+  h2 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+}
+
+.intro__position {
+  font-size: 18px;
+  opacity: 0.9;
+  margin-bottom: 12px;
+
+  a {
+    color: #ffffff;
+  }
+}
+
+.intro__vacation {
+  font-size: 14px;
+  opacity: 0.4;
+}
+
+.intro__contacts {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 28px;
+
+  li {
+    font-weight: 400;
+    font-size: 18px;
+    color: $color__green;
+    margin-right: 40px;
+  }
+}
+
+.intro__items {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    font-size: 14px;
+    margin-right: 64px;
+  }
+
+  span {
+    font-weight: 300;
+    opacity: 0.4;
+  }
+
+  strong {
+    font-weight: 400;
+    display: block;
+    margin-top: 4px;
+  }
+}
+
+.intro__persons {
+  display: flex;
+  position: absolute;
+  bottom: -40px;
+  width: 100%;
+  height: 80px;
+  box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.05);
+
+  a {
+    cursor: pointer;
+  }
+
+  &.noemployees {
+    position: static;
+    margin-top: 24px;
+  }
+}
+
+.intro__container {
+  position: relative;
+  padding-bottom: 80px;
+}
+
+.intro__person {
+  width: 50%;
+  display: flex;
+  align-items: center;
+
+  span {
+    font-size: 18px;
+    margin-right: 24px;
+  }
+
+  &.manager {
+    background: #ffffff;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding-left: 40px;
+
+    strong {
+      font-size: 24px;
+    }
+  }
+
+  &.backup {
+    color: #ffffff;
+    background-color: $color__green;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding-left: 32px;
+
+    strong {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        font-size: 18px;
+
+        a {
+          color: #ffffff;
+        }
+      }
+
+      li + li {
+        margin-left: 24px;
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.gbxp {
+  color: #ffffff;
+  padding: 64px 0;
+  background-image: url("/images/gbxp-bg.jpg");
+  background-size: cover;
+
+  h2 {
+    font-size: 48px;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  p {
+    font-size: 22px;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  a {
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+
+    @include arrow(#ffffff, 6px, 6px);
+
+    &:after {
+      margin-top: 10px;
+      margin-left: 8px;
+    }
+  }
+
+  img {
+    max-width: 560px;
+  }
+}
+
+.gbxp__row {
+  justify-content: space-between !important;
+}
+
+.gbxp__img {
+  text-align: right;
+}

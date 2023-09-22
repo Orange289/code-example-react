@@ -1,0 +1,50 @@
+.brokerage {
+  padding: 80px 0 72px;
+
+  h2 {
+    font-size: 48px;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 0;
+    margin-bottom: 24px;
+    max-width: 512px;
+  }
+
+  a {
+    color: $color__green;
+    font-size: 20px;
+    font-weight: 400;
+
+    @include arrow($color__green, 6px, 6px);
+
+    &:after {
+      margin-top: 10px;
+      margin-left: 8px;
+    }
+  }
+
+  img {
+    margin-top: 0;
+    max-width: 424px;
+  }
+}
+
+.brokerage__item.platform {
+  strong {
+    font-size: 22px;
+    display: block;
+    padding-left: 40px;
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: 16px;
+    padding-left: 40px;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,9 @@
+.items {
+  padding: 72px 0 96px;
+  background-color: $color__gray-2-lightest;
+
+  &.second {
+    color: #ffffff;
+    background-color: #000000;
+  }
+}

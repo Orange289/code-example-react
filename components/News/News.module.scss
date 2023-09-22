@@ -1,0 +1,22 @@
+.news {
+  position: relative;
+  padding-top: 88px;
+  background-color: #ffffff;
+  // padding-bottom: 225px;
+
+  h3 {
+    font-size: 48px;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+}
+
+.news__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

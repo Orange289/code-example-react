@@ -1,0 +1,47 @@
+.intro {
+  color: #ffffff;
+  padding: 160px 0 88px;
+  background: url("/images/about-bg.jpg");
+  background-size: cover;
+
+  h1 {
+    font-size: 48px;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  p:first-of-type {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 24px;
+  }
+}
+
+.intro__numbers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.intro__number {
+  width: 33.3%;
+
+  span {
+    display: block;
+    font-size: 18px;
+    margin-top: 8px;
+  }
+
+  .intro__counter {
+    color: $color__green;
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 400;
+  }
+}

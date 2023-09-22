@@ -1,0 +1,115 @@
+.department {
+  box-shadow: 4px 4px 26px 0px #0000001a;
+  margin-left: 8px;
+  margin-right: 8px;
+  position: relative;
+  font-size: 18px;
+  text-align: center;
+  background-color: #ffffff;
+  font-weight: 400;
+  flex-grow: 1;
+
+  & + & {
+    margin-top: 16px;
+  }
+
+  &.department_person {
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+  }
+
+  &.department_onlyName {
+    padding: 24px;
+
+    // text-align: center;
+    .department__wrap {
+      justify-content: center;
+    }
+  }
+}
+
+.department__wrap {
+  //   display: flex;
+  //   align-items: center;
+}
+
+.department__personWrap {
+  background-color: $color__gray-2-lightest;
+  padding: 18px 32px;
+
+  a {
+    color: $color__black--light;
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.department__control {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 100%;
+}
+
+.department__icon {
+  position: relative;
+  margin-right: 12px;
+  width: 24px;
+  height: 24px;
+
+  &:after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    border-bottom: 2px solid $color__green;
+    border-right: 2px solid $color__green;
+    transform: rotate(-45deg);
+    width: 14px;
+    height: 14px;
+    transition: transform 0.3s ease-in-out;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+  }
+}
+
+.department__top {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 28px 32px 18px;
+  color: $color__green;
+}
+
+.department_active {
+  .department__icon {
+    &:after {
+      top: -8px;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.department__divisions {
+  // transition: visibility 0.3s;
+  // transition-delay: 0.3s;
+  // visibility: hidden;
+
+  // &.visible {
+  //   visibility: visible;
+
+  padding: 25px 32px 32px;
+  // }
+
+  a + a {
+    margin-top: 8px;
+  }
+}

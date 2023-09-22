@@ -1,0 +1,19 @@
+.checklist {
+  color: #ffffff;
+  background: linear-gradient(113.94deg, #007f39 54.88%, #02cc52 100%);
+  padding: 65px 0 80px;
+  position: relative;
+  z-index: 2;
+
+  h2 {
+    font-size: 48px;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.checklist__item:last-of-type {
+  > div {
+    height: 100%;
+  }
+}

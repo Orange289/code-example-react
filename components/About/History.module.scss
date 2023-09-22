@@ -1,0 +1,189 @@
+.history {
+  overflow: hidden;
+
+  padding-top: 80px;
+
+  h2 {
+    font-size: 48px;
+
+    margin: 0;
+    margin-bottom: 56px;
+  }
+}
+
+.history__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.history__year {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 176px;
+  margin-right: 64px;
+
+  text-align: center;
+
+  span {
+    font-size: 24px;
+
+    position: relative;
+    z-index: 1;
+
+    color: #f8fffb;
+  }
+
+  img {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: block;
+
+    margin: auto;
+  }
+}
+
+.history__item {
+  display: flex;
+
+  align-items: center;
+  margin-bottom: 80px;
+
+  // & + & {
+  //   margin-top: 80px;
+  // }
+
+  strong {
+    font-size: 32px;
+    line-height: 40px;
+
+    width: 416px;
+    margin-right: 64px;
+  }
+
+  p {
+    flex: 1;
+
+    margin: 0;
+  }
+
+  img {
+    display: block;
+    height: 100%;
+  }
+
+  &:nth-child(1) {
+    margin-bottom: 57px;
+    .history__year {
+      height: 97px;
+    }
+  }
+
+  &:nth-child(2) {
+    .history__year {
+      height: 111px;
+    }
+  }
+
+  &:nth-child(3) {
+    .history__year {
+      height: 129px;
+    }
+  }
+
+  &:nth-child(4) {
+    .history__year {
+      height: 150px;
+    }
+  }
+
+  &:nth-child(5) {
+    .history__year {
+      height: 167px;
+    }
+  }
+
+  &:nth-child(6) {
+    .history__year {
+      height: 185px;
+    }
+  }
+
+  &:nth-child(7) {
+    .history__year {
+      height: 205px;
+    }
+  }
+}
+
+// .history__slider {
+//   background-color: $color__gray--lighter;
+//   padding-bottom: 96px;
+
+//   .history__swiper {
+//     overflow: visible;
+//   }
+// }
+
+// .history__item {
+//   strong {
+//     font-weight: 400;
+//     color: $color__green;
+//     font-size: 56px;
+//     display: block;
+//     padding-top: 47px;
+//     margin-bottom: 25px;
+//     position: relative;
+
+//     &:before {
+//       content: "";
+//       position: absolute;
+//       top: -8px;
+//       left: 8px;
+//       display: block;
+//       width: 16px;
+//       height: 16px;
+//       transform: rotate(45deg);
+//       background-color: $color__green;
+//     }
+//   }
+
+//   h3 {
+//     font-size: 36px;
+//     line-height: 44px;
+//     font-weight: 300;
+//     margin: 0;
+//     margin-bottom: 30px;
+//   }
+
+//   p {
+//     font-size: 18px;
+//     line-height: 24px;
+//     margin: 0;
+//   }
+// }
+
+// .history__sliderwrapper {
+//   position: relative;
+
+//   &:after {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 100%;
+//     width: 1000px;
+//     height: 100%;
+//     background: $color__gray--lighter;
+//     z-index: 2;
+//   }
+// }

@@ -1,0 +1,166 @@
+.contact {
+  margin-bottom: 64px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.contact__img {
+  display: block;
+  width: 176px;
+  height: 176px;
+  overflow: hidden;
+  margin-right: 48px;
+  position: relative;
+  overflow: visible;
+
+  & > img {
+    width: 100%;
+    border-radius: 50%;
+  }
+}
+
+.contact__name {
+  margin-bottom: 8px;
+
+  a {
+    font-size: 20px;
+    line-height: 24px;
+    color: $color__black--lighter;
+    font-size: 20px;
+  }
+}
+
+.contact__position,
+.contact__department {
+  color: $color__gray;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.contact__department {
+  margin-bottom: 12px;
+}
+
+.contact__links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 12px;
+
+  li {
+    font-size: 14px;
+    line-height: 16px;
+    color: $color__green;
+    font-weight: 400;
+    margin-right: 8px;
+  }
+}
+
+.contact__items {
+  display: flex;
+  letter-spacing: 0.14px;
+}
+
+.contact__item {
+  margin-bottom: 6px;
+  margin-right: 32px;
+  // width: 50%;
+
+  strong {
+    font-weight: 300;
+    display: block;
+    color: $color__gray;
+    font-size: 14px;
+  }
+
+  span {
+    font-weight: 400;
+    color: $color__black--lighter;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.contact__employees {
+  margin-top: 16px;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li:not(.contact__seemore) {
+    width: 64px;
+    height: 64px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+  }
+
+  li + li {
+    margin-left: -14px;
+  }
+
+  .contact__seemore {
+    color: $color__green;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 22px;
+
+    a {
+      display: block;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+.contact__info {
+  flex: 1;
+}
+
+.contact__vacation {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  padding-top: 3px;
+  padding-left: 24px;
+  padding-right: 8px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  position: relative;
+  display: inline-block;
+  height: 24px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    width: 10px;
+    height: 10px;
+  }
+
+  &.upcoming {
+    background-color: #c5c5c5;
+
+    &:before {
+      background: url("/images/icons/attention-icon.svg");
+    }
+  }
+
+  &.now {
+    background-color: $color__green--lightest;
+
+    &:before {
+      background: url("/images/icons/vacation-icon.svg");
+    }
+  }
+}
+
+.contact__bdicon {
+  bottom: -16px;
+}

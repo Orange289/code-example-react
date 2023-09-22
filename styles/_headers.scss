@@ -1,0 +1,52 @@
+@mixin header {
+  // font-family: $font-family-secondary;
+  font-weight: 300;
+
+  margin-top: 0;
+
+  color: inherit;
+  @media print {
+    page-break-inside: avoid;
+  }
+}
+
+@mixin h1 {
+  @include header;
+  @include bp(tablet) {
+    font-size: 42px;
+    line-height: 1.19;
+  }
+  @include bp(desktop-large) {
+    font-size: 48px;
+    line-height: 1.31;
+  }
+  @include bp(desktop-wide) {
+    font-size: 56px;
+    line-height: 1;
+  }
+
+  font-size: 32px;
+  line-height: 1.25;
+}
+
+@mixin h2 {
+  @include header;
+  // @include bp(tablet) {
+  font-size: 34px;
+  line-height: 45px;
+
+  margin-top: 20px;
+  // }
+  @include bp(desktop) {
+    font-size: 38px;
+    line-height: 1.3;
+  }
+  @include bp(desktop-wide) {
+    font-size: 48px;
+  }
+
+  font-size: $font-size-base;
+  line-height: 25px;
+
+  margin-top: 10px;
+}

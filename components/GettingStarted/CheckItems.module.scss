@@ -1,0 +1,142 @@
+.checkitems {
+  color: $color__black--lighter;
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 32px;
+
+  .checklist__row {
+    margin: 0 !important;
+    flex-direction: column !important;
+  }
+
+  &.big {
+    padding-bottom: 17px;
+    margin-bottom: 40px;
+
+    .checklist__row {
+      flex-direction: row !important;
+    }
+    .checkitems__link {
+      padding-left: 32px;
+    }
+
+    .checkitems__item:nth-of-type(2n) {
+      padding-left: 47px !important;
+    }
+
+    .checkitems__item:last-of-type {
+      margin-top: -18px;
+    }
+
+    .checklist__row {
+      margin-left: -15px !important;
+      margin-right: -15px !important;
+    }
+  }
+}
+
+.checkitems__list {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: static;
+}
+
+.checkitems__item {
+  margin-bottom: 32px;
+
+  label {
+    cursor: pointer;
+  }
+
+  strong {
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 32px;
+    height: 32px;
+    border: 2px solid $color__green--light;
+    border-radius: 100%;
+    margin-right: 16px;
+
+    img {
+      display: none;
+    }
+  }
+
+  input {
+    display: none;
+
+    &:checked + span {
+      background-color: $color__green;
+      border-color: $color__green;
+
+      img {
+        display: block;
+        margin-top: 10px;
+        margin-left: 7px;
+      }
+    }
+  }
+}
+
+.checkitems__title {
+  margin-bottom: 16px;
+
+  strong {
+    font-weight: 400;
+    font-size: 32px;
+    margin-right: 8px;
+  }
+
+  span {
+    font-weight: 300;
+    font-size: 18px;
+    opacity: 0.3;
+    letter-spacing: 0.01em;
+  }
+}
+
+.checkitems__desc {
+  margin-bottom: 24px;
+  p {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    margin-bottom: 16px;
+    max-width: 416px;
+  }
+
+  .big & p {
+    margin-bottom: 0;
+  }
+}
+
+.checkitems__link {
+  a {
+    color: $color__green;
+    line-height: 1;
+    font-weight: 400;
+
+    display: block;
+
+    @include arrow($color__green, 7px, 7px);
+
+    &:after {
+      margin-top: 4px;
+      margin-left: 6px;
+    }
+  }
+
+  span {
+    font-size: 10px;
+    opacity: 0.3;
+  }
+}

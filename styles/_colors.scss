@@ -1,0 +1,36 @@
+$colors: (
+  primary-900: #00662e,
+  primary: #007f39,
+  primary-700: #409f6b,
+  primary-600: #46a26f,
+  primary-500: #2eac67,
+  primary-400: #f2f8f2,
+  text: #222224,
+  stocks: #76faaf,
+  currencies: #42c9f4,
+  metal: #1c68ff,
+  futures: #e649f4,
+  options: #f1486e,
+  funds: #f1e147,
+  bonds: #b1f845,
+  cryptocurrencies: #f39520,
+  error: #c2454d,
+  dwhite: #ffffff,
+  dblack: #000000,
+  black--800: #222224,
+  black--700: #252c2e,
+  black--600: #2f383a,
+  gray--900: #515356,
+  gray--800: #778c91,
+  gray--700: #e4e8e9,
+  gray--600: #f7f8fb,
+  gray--500: #f2f2f2,
+  gray--400: #f7f7f7,
+  gray--300: #f8f8f8,
+  'transparent': rgba(255, 255, 255, 0)
+);
+
+@mixin var($property, $varName) {
+  #{$property}: map-get($colors, $varName);
+  #{$property}: var(--colors-#{$varName});
+}

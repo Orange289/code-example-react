@@ -1,0 +1,82 @@
+.platforms {
+  padding-top: 65px;
+
+  h2 {
+    font-size: 48px;
+    margin: 0;
+    margin-bottom: 32px;
+  }
+}
+
+.platforms__col {
+  margin-bottom: 46px;
+  img {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 27px;
+  }
+
+  strong {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+}
+
+.platforms__action {
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  a {
+    padding: 8px 16px;
+  }
+}
+
+.platforms__item {
+  margin-bottom: 98px;
+
+  &.bamboo {
+    margin-bottom: 120px;
+
+    h2 {
+      margin-bottom: 56px;
+    }
+  }
+
+  &.it {
+    margin-bottom: 50px;
+
+    h2 {
+      margin-bottom: 64px;
+    }
+  }
+}
+
+.platforms__bambooitem {
+  margin-bottom: 24px;
+
+  strong {
+    font-size: 20px;
+    color: $color__black--lighter;
+    font-weight: 400;
+  }
+
+  &.note:after {
+    content: "(tasks assigned to you)";
+    color: $color__gray-2;
+    font-weight: 300;
+    font-size: 14px;
+    margin-left: 4px;
+  }
+}
+
+.platforms__desc {
+  p {
+    margin: 0;
+    margin-top: 4px;
+  }
+}

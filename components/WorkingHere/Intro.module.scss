@@ -1,0 +1,39 @@
+.intro {
+  color: #ffffff;
+  background-image: url("/images/bg-working-here.jpg");
+  background-size: cover;
+  padding-top: 104px;
+  padding-bottom: 80px;
+}
+
+.intro__items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.intro__item {
+  height: 68px;
+
+  a {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 18px;
+    padding-left: 36px;
+    display: flex;
+    @include arrow($color__green, 16px, 16px, 2px, false);
+
+    &:before {
+      position: absolute;
+      top: -5px;
+      left: -2px;
+    }
+  }
+
+  // a:after {
+  //   height: 70px;
+  // }
+}
